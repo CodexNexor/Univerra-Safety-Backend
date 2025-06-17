@@ -52,6 +52,7 @@ groq_client = Groq(api_key=GROQ_API_KEY)
 # =========================
 SAFE_EMAIL_CHARS = re.compile(r"[^a-zA-Z0-9_.@+\-]")
 
+# _utcnow
 def _utcnow() -> datetime:
     return datetime.now(timezone.utc)
 
