@@ -66,6 +66,7 @@ SOURCES_SECTION_PATTERN = re.compile(
     re.IGNORECASE
 )
 
+# strip_plaintext_sources
 def strip_plaintext_sources(text: str) -> str:
     return re.sub(SOURCES_SECTION_PATTERN, "", text or "").strip()
 
