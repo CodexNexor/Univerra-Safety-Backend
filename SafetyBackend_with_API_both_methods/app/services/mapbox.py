@@ -13,6 +13,7 @@ MAPBOX_API_KEY = os.getenv("MAPBOX_API_KEY")
 # ------------------------------------------------------------
 _SESSION: Optional[requests.Session] = None
 
+# _session
 def _session() -> requests.Session:
     global _SESSION
     if _SESSION is None:
