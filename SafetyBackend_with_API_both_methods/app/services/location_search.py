@@ -30,6 +30,7 @@ BRAVE_COUNT = 3    # fewer results = faster + less RAM
 _SESSION: Optional[requests.Session] = None
 
 
+# _session
 def _session() -> requests.Session:
     """Return a global pooled session (thread-safe)."""
     global _SESSION
