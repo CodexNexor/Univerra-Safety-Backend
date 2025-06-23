@@ -10,6 +10,7 @@ TEMPLATES: Sequence[str] = (
     "{locations} live crime updates danger reports",
 )
 
+# build_prompts
 def build_prompts(main_location: str, nearby_locations: List[str], max_prompts: int = 5) -> List[str]:
     # Total pool size (main + nearby); we only ever need up to 4
     n_total = 1 + (len(nearby_locations) if nearby_locations else 0)
