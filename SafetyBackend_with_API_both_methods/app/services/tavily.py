@@ -26,6 +26,7 @@ MAX_WORKERS = 4    # small, avoids RAM spikes but improves latency via parallel 
 _SESSION: Optional[requests.Session] = None
 
 
+# _session
 def _session() -> requests.Session:
     """Return a global pooled session (thread-safe for simple GET/POST)."""
     global _SESSION
