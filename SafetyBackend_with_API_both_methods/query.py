@@ -3,6 +3,7 @@ from app.services.classifier import classify_query
 from app.services.gemini import generate_human_answer
 from app.services.tavily import search_with_tavily
 
+# process_user_query
 def process_user_query(query: str, history: list = None) -> str:
     """
     Process incoming user query and return a human-friendly answer.
