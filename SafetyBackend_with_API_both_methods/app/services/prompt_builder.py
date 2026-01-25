@@ -25,7 +25,7 @@ def build_prompts(main_location: str, nearby_locations: List[str], max_prompts: 
     joined_locations = " ".join(_loc(i) for i in idxs)
 
     # Clamp prompts to available templates
-    limit = max_prompts if max_prompts < len(TEMPLATES) else len(TEMPLATES)
+    limit = min(max_prompts, len(TEMPLATES))
 
     # Render prompts with a single pass
     return [tpl.format(locations=joined_locations) for tpl in TEMPLATES[:limit]]
