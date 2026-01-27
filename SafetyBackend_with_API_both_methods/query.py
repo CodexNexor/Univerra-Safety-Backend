@@ -1,5 +1,4 @@
-# app/services/query.py
-
+"""Query pipeline — classify, search, and generate human-friendly answers."""
 from app.services.classifier import classify_query
 from app.services.gemini import generate_human_answer
 from app.services.tavily import search_with_tavily
