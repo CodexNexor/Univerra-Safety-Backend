@@ -17,9 +17,13 @@
 
 ```bash
 python query.py
-
 ```
 
+## Features
+- Query classification (general/chitchat)
+- Real-time web search
+- Location-aware safety responses
+- Markdown-formatted answers
 
 ## Usage
 
