@@ -50,7 +50,7 @@ groq_client = Groq(api_key=GROQ_API_KEY)
 # =========================
 # Utilities for File and Directory Management
 # =========================
-SAFE_EMAIL_CHARS = re.compile(r"[^a-zA-Z0-9_.@+-]")
+SAFE_EMAIL_CHARS = re.compile(r"[^a-zA-Z0-9_.@+\-]")
 
 def _utcnow() -> datetime:
     return datetime.now(timezone.utc)
