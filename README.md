@@ -16,7 +16,8 @@
 ### Quick Start
 
 ```bash
-npm install univerra-safety-backend
+python query.py
+
 ```
 
 
