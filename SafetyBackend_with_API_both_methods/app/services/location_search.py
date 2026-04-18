@@ -1,5 +1,4 @@
-# app/services/location_search.py
-
+# Location search — Tavily + Brave search APIs
 import os
 import json
 import requests
