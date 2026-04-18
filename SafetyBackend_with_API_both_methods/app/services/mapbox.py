@@ -1,5 +1,4 @@
-# app/services/mapbox.py
-
+# Mapbox geocoding service — converts addresses to coordinates
 import os
 import requests
 from typing import Tuple, List, Dict, Any, Optional
