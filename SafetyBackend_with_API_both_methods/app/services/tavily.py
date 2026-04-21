@@ -5,10 +5,7 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import List, Tuple, Dict, Any, Iterable, Optional
 from dotenv import load_dotenv
 
-# ------------------------------ #
-# Fast, low-RAM, connection-pooled
-# Tavily + Brave search utilities
-# ------------------------------ #
+# Tavily + Brave search utilities — fast, connection-pooled web search
 
 # Load environment variables once
 load_dotenv()
