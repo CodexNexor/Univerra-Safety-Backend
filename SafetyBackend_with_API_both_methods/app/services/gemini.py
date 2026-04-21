@@ -1,5 +1,4 @@
-# app/services/gemini.py
-
+# Gemini + Groq AI response generation
 import os
 from dotenv import load_dotenv
 import google.generativeai as genai
